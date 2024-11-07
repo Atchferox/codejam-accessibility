@@ -1,0 +1,30 @@
+.sectionHeading {
+  color: #333;
+  font-size: 32px;
+  text-align: center;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.serviceCard {
+  padding: 2rem;
+  border: 1px solid #eee;
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.serviceTitle {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  font-size: 14px;
+}

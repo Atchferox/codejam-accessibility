@@ -1,0 +1,36 @@
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.accordionHeader:hover {
+  background-color: #ebebeb;
+}
+
+.accordionArrow {
+  transition: transform 0.3s ease;
+}
+
+.accordionContent {
+  padding: 15px 20px;
+  background-color: white;
+  line-height: 1.6;
+}
