@@ -1,20 +1,26 @@
 .modalContainer {
   position: fixed;
-  width: 400px;
-  height: 600px;
+  // inset: 0 0 0 0;
+  // width: 400px;
+  // height: 600px;
   background-color: white;
   border: 1px black solid;
   border-radius: 1rem;
   z-index: 3;
-  padding: 0.5rem;
+  padding: var(--space-base);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  &::backdrop {
+    background-color: black;
+    opacity: 0.9;
+  }
 }
 
 .modalHeader {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
@@ -56,6 +62,12 @@
   top: 0;
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-regular);
+}
+
 .acceptButton,
 .declineButton {
   padding: 0.8rem 1.5rem;
@@ -69,7 +81,7 @@
 .acceptButton {
   background-color: #2a9d8f;
   color: white;
-  flex: 2;
+  flex: 1;
 }
 
 .declineButton {

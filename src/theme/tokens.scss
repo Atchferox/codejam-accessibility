@@ -1,0 +1,89 @@
+// DON'T TOUCH THIS FILE UNLESS YOU KNOW WHAT YOU'RE DOING.
+// THIS IS NOT MEANT FOR GENERAL CSS, USE A MODULE.
+
+// Here be dragons 🐉
+
+:root {
+  // Colors yoinked from figma
+  // https://www.figma.com/design/8hDDVHjUEZLfddrxBn4zmm/Zorggenoot-Redesign?node-id=49-23002&t=BFpqjcD9SGTNYnKb-4
+  --color-pink-100: #fcf5f3;
+  --color-pink-200: #f8e8e2;
+  --color-pink-300: #f4dad2;
+  --color-pink-400: #edc3b5;
+  --color-pink-500: #ebbcad;
+  --color-pink-600: #f4ad95;
+  --color-pink-700: #f19779;
+  --color-pink-800: #ee825d;
+  --color-pink-900: #873317;
+  --color-green: #213f3d;
+  --color-green-100: #e9f2f0;
+  --color-green-200: #e1eae8;
+  --color-green-300: #b8d5cf;
+  --color-green-400: #9fc6be;
+  --color-green-500: #819c96;
+  --color-green-600: #67837d;
+  --color-green-700: #516762;
+  --color-green-800: #3a4a47;
+  --color-green-900: #242e2c;
+  --color-blue-100: #ecf6f9;
+  --color-blue-200: #e2ebee;
+  --color-blue-300: #d0e5ec;
+  --color-blue-400: #8fbdcc;
+  --color-blue-500: #4fa4bf;
+  --color-blue-600: #4095b0;
+  --color-blue-700: #39859d;
+  --color-blue-800: #176077;
+  --color-blue-900: #114555;
+  --color-yellow-100: #fff2e5;
+  --color-yellow-200: #ffe7d1;
+  --color-yellow-300: #ffdebf;
+  --color-yellow-400: #ffcd9e;
+  --color-yellow-500: #ffb875;
+  --color-yellow-600: #ffad61;
+  --color-yellow-700: #ffa34d;
+  --color-yellow-800: #e88930;
+  --color-yellow-900: #9e5c00;
+  --color-grey-100: #f5f5f5;
+  --color-grey-200: #ededed;
+  --color-grey-300: #d4d4d4;
+  --color-grey-400: #bababa;
+  --color-grey-500: #a1a1a1;
+  --color-grey-600: #878787;
+  --color-grey-700: #6e6e6e;
+  --color-grey-800: #3b3b3b;
+  --color-white: white;
+  --color-black: black;
+  --color-error: #cc1600;
+
+  // Radii yoinked from figma
+  // https://www.figma.com/design/8hDDVHjUEZLfddrxBn4zmm/Zorggenoot-Redesign?node-id=49-23002&t=BFpqjcD9SGTNYnKb-4
+  --radius-extra-large: 5rem;
+  --radius-large: 2.5rem;
+  --radius-medium: 1.5rem;
+  --radius-small: 1.25rem;
+  --radius-x-small: 0.75rem;
+  --radius-xx-small: 0.5rem;
+  --radius-extra-small: 0.25rem;
+  --radius-full: 9999rem;
+
+  // Text styles yoinked from figma
+  // https://www.figma.com/design/8hDDVHjUEZLfddrxBn4zmm/Zorggenoot-Redesign?node-id=49-23002&t=BFpqjcD9SGTNYnKb-4
+  // Used in `font` shorthand property.
+  // grammar: <weight> <font-size> / <line-height> <font-family>;
+
+  // Padding/gap sizes yoinked from figma
+  // https://www.figma.com/design/8hDDVHjUEZLfddrxBn4zmm/Zorggenoot-Redesign?node-id=49-23002&t=BFpqjcD9SGTNYnKb-4
+  // Used in `gap`, `padding` or any other property that describes a spatial relationship.
+  --space-xx-small: 0.25rem;
+  --space-x-small: 0.5rem;
+  --space-small: 0.75rem;
+  --space-base: 1rem;
+  --space-regular: 1.5rem;
+  --space-normal: 2rem;
+  --space-medium: 2.5rem;
+  --space-large: 3rem;
+  --space-large-plus: 3.75rem;
+  --space-x-large: 5rem;
+  --space-xx-large: 7.5rem;
+  --space-xxx-large: 11.25rem;
+}

@@ -23,13 +23,13 @@ const Accordion = ({ items }: AccordionProps) => {
   return (
     <div className={styles.accordion}>
       {items.map((item, index) => (
-        <div key={index} className={styles.accordionItem}>
-          <div className={styles.accordionHeader} onClick={() => toggleContent(index)}>
+        <details key={index} className={styles.accordionItem}>
+          <summary className={styles.accordionHeader} onClick={() => toggleContent(index)}>
             <span>{item.title}</span>
             <span id={`accordion-arrow-${index}`} className={styles.accordionArrow}>
               ▼
             </span>
-          </div>
+          </summary>
           <div
             id={`accordion-content-${index}`}
             className={styles.accordionContent}
@@ -37,7 +37,7 @@ const Accordion = ({ items }: AccordionProps) => {
           >
             {item.content}
           </div>
-        </div>
+        </details>
       ))}
     </div>
   );

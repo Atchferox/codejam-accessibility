@@ -1,11 +1,11 @@
-import styles from './AboutSection.module.css';
+import styles from './AboutSection.module.scss';
 
 export default function AboutSection() {
   return (
     <>
-      <h6 className={styles.sectionHeading}>About Our Hairy Business</h6>
+      <h3 className={styles.sectionHeading}>About Our Hairy Business</h3>
       <div className={styles.aboutGrid}>
-        <img src="/company_logo.jpg" className={styles.companyLogo} />
+        <img src="/company_logo.jpg" alt="company logo" className={styles.companyLogo} />
         <div className={styles.about}>
           <div className={styles.establishedDate}>MAKING HEADS HAPPY SINCE 2024</div>
           <div className={styles.aboutText}>

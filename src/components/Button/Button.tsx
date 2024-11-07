@@ -1,13 +1,13 @@
 import styles from './Button.module.css';
 
-interface ButtonProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
+interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
 export const Button = ({ onClick, children, ...props }: ButtonProps) => {
   return (
-    <div onClick={onClick} {...props} className={styles.button}>
+    <button onClick={onClick} {...props}>
       {children}
-    </div>
+    </button>
   );
 };
